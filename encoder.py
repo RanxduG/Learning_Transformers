@@ -202,12 +202,7 @@ class Encoder(nn.Module):
 
     def forward(self, x):
         # x: [batch_size, seq_len, d_model]
-        print(f"Input to encoder: {x.shape}")
         x = self.pos_encoder(x)
-        print(f"Encoded input: {x}")
-        print(f"After positional encoding: {x.shape}")
         x = self.dropout(x)
         x = self.layers(x)
-        print(f"Final encoder output: {x.shape}")
-        print(f"Final encoder output: {x}")
         return x
