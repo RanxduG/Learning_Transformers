@@ -1,0 +1,9 @@
+d_model = 512
+num_heads = 8
+ffn_hidden = 2048
+num_layers = 6
+dropout = 0.1
+max_seq_len = 200
+batch_size = 16
+learning_rate = 1e-4
+num_epochs = 10
